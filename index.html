@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>currency calculator</title>
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <section class="container text-center">
+      <h1>Currency Converter</h1>
+      <form name="currency_converter">
+        <fieldset class="form-group">
+          <label>Name</label>
+          <br>
+          <label for="usd">USD</label>
+          <input type="radio" class="usd" id="usd">
+          <label for="usd"></label>
+          <label for="euro">EURO</label>
+          <input type="radio" class="euro" id="euro">
+          <label for="euro"></label>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="amount">Amount</label>
+          <br>
+          <input type="text" class="amount form-control" id="amount">
+        </fieldset>
+        <fieldset >
+          <label for="price">Price in EGP</label>
+          <br>
+          <input type="text" class="price form-control" id="price">
+        </fieldset>
+        <button class="submit btn btn-primary">Submit</button>
+        <button class="btn btn-danger">Clear history</button>
+        <br>
+        <label>Your money is <span class="final">0</span> EGP</label>
+      </form> 
+      <article>
+        <h2>History</h2>
+        <ul class="list-unstyled history">
+        </ul>
+      </article>
+    </section>
+  </body>
+  <footer class="text-center">
+    This project done as application on Jquery, design &amp; development by MOHAMED RAGAB
+    <script src="js/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+  </footer>
+</html>
